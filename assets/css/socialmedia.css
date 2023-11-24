@@ -1,0 +1,121 @@
+.social {
+  top: 50%;
+  left: 50%;
+  /* transform: translate(-50%, -50%); */
+  width: 90%;
+  max-width: 1200px;
+}
+
+.social .btn {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  background: #fff;
+  box-shadow: 0 5px 15px -5px #aaa;
+  margin: 10px;
+  border-radius: 30%;
+  overflow: hidden;
+  position: relative;
+  color: #42d2ff;
+}
+
+.social .btn i {
+  position: relative;
+  z-index: 4;
+  line-height: 90px;
+  font-size: 36px;
+  transition: 0.3s ease-in-out;
+}
+
+.social .fa-github {
+  color: #383838;
+}
+
+.social .gh::before {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: linear-gradient(#7e7e7e, #3a3a3a);
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+
+.social .fa-linkedin {
+  color: #0a66c2;
+}
+
+.social .in::before {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: linear-gradient(#2391ff, #0059b3);
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+
+.social .fa-instagram {
+  color: #e33d68;
+}
+
+.social .ig::before {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(
+    circle at 60% 100%,
+    #fed373 4%,
+    #f15245 30%,
+    #d92e7f 62%,
+    #9b36b7 85%,
+    #515ecf
+  );
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+
+.social .fa-whatsapp {
+  color: #2bb741;
+}
+
+.social .wa::before {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: linear-gradient(#2bb741, #2bb741);
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+
+.social .btn:hover i {
+  color: #fff;
+  transform: scale(1.4);
+}
+
+.social .btn:hover::before {
+  animation: onHover 0.7s 1;
+  left: -10%;
+  top: -10%;
+}
+
+@keyframes onHover {
+  0% {
+    left: -110%;
+    top: 90%;
+  }
+  50% {
+    left: 10%;
+    top: -30%;
+  }
+  100% {
+    top: -10%;
+    left: -10%;
+  }
+}
