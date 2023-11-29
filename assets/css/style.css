@@ -1386,13 +1386,6 @@ a:hover {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-.footer-paralax {
-  padding: 4rem 0 0 0;
-}
-
-.contact-mf {
-  margin-top: 4rem;
-}
 
 @media (min-width: 767px) {
   .contact-mf .box-pl2 {
@@ -1698,21 +1691,174 @@ a:hover {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-footer {
-  text-align: center;
+.footer-distributed {
+  position: absolute;
+  background: #3d3e42;
+  box-sizing: border-box;
+  width: 100%;
+  font: bold 16px sans-serif;
+  text-align: left;
+  padding: 50px 60px 40px;
+}
+
+/* Footer left */
+.footer-distributed .footer-left {
+  float: left;
+}
+
+/* The contact form */
+.footer-distributed form {
+  display: inline-block;
+  margin: 8px 0;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea {
+  display: block;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.3);
+  border: none;
+  resize: none;
+  font: inherit;
+  font-size: 14px;
+  font-weight: normal;
   color: #fff;
-  padding: 25px 0;
-  background: #0062d3;
+  width: 400px;
+  padding: 18px;
 }
 
-footer .copyright {
-  margin-bottom: 0.3rem;
-}
-
-footer .credits {
-  margin-bottom: 0;
-}
-
-footer .credits a {
+.footer-distributed ::-webkit-input-placeholder {
   color: #fff;
+}
+
+.footer-distributed form input {
+  height: 40px;
+  margin-bottom: 15px;
+}
+
+.footer-distributed form button {
+  border-radius: 3px;
+  background-color: #fec86a;
+  color: #000;
+  border: 0;
+  padding: 15px 30px;
+  font-weight: bold;
+  float: right;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.footer-distributed form button:hover {
+  background-color: #f8d08b;
+}
+
+/* Footer Right */
+.footer-distributed .footer-right {
+  float: right;
+}
+
+.footer-distributed .footer-right p {
+  display: block;
+  vertical-align: top;
+  font-size: 18px;
+  margin: 0px 42px 0 0;
+  color: #fff;
+}
+
+/*footer links*/
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a {
+  display: block;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-text {
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.5;
+  text-overflow: ellipsis;
+  max-width: 200px;
+  font-weight: normal;
+  margin-top: 40px;
+}
+
+/* Footer social icons */
+.footer-distributed .footer-icons {
+  margin-top: 8px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+#footerLogo {
+  float: left;
+  width: 120px;
+  height: 50px;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 420px) {
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-distributed {
+    padding: 30px;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-right {
+    float: none;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .footer-distributed .footer-left {
+    margin-bottom: 40px;
+  }
+
+  .footer-distributed form {
+    margin-top: 30px;
+    display: block;
+  }
+
+  .footer-distributed form button {
+    float: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+}
+
+@media only screen and (max-width: 1200px) {
+  .footer-distributed {
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-text {
+    font-size: 12px;
+  }
+
+  .footer-distributed form input {
+    width: 250px;
+  }
+
+  .footer-distributed form button {
+    padding: 10px 35px;
+  }
 }
