@@ -331,6 +331,88 @@ a:hover {
   font-size: 16;
   font-weight: 400;
 }
+/* For tablets */
+@media (max-width: 768px) {
+  .darker-div {
+    height: 8vh;
+  }
+
+  .experience h1 {
+    font-size: 40px;
+    top: 8%;
+    margin-left: 2rem;
+  }
+
+  .lighter-div {
+    padding: 8vh 5vw;
+  }
+
+  .lighter-div .exp {
+    height: auto;
+    width: 80vw;
+    margin: 5vh 0;
+  }
+
+  .exp h2 {
+    font-size: 28px;
+  }
+
+  .exp h2::before {
+    top: 10%;
+    left: -8%;
+  }
+
+  .exp-desc::before {
+    height: 150px;
+    top: 45%;
+  }
+
+  .exp-desc h3 {
+    font-size: 18px;
+    margin: 8px 0;
+  }
+}
+
+/* For phones */
+@media (max-width: 575px) {
+  .darker-div {
+    height: 6vh;
+  }
+
+  .experience h1 {
+    font-size: 32px;
+    top: 6%;
+    margin-left: 2rem;
+  }
+
+  .lighter-div {
+    padding: 6vh 3vw;
+  }
+
+  .lighter-div .exp {
+    width: 90vw;
+    margin: 3vh 0;
+  }
+
+  .exp h2 {
+    font-size: 24px;
+  }
+
+  .exp h2::before {
+    top: 12%;
+    left: -10%;
+  }
+
+  .exp-desc::before {
+    height: 120px;
+    top: 35%;
+  }
+
+  .exp-desc h3 {
+    font-size: 16px;
+    margin: 6px 0;
+  }
+}
 
 .bg-image {
   background-repeat: no-repeat;
